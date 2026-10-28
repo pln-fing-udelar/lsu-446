@@ -16,6 +16,7 @@ No video, video chunks or ELAN files are distributed.
 | Column | Meaning |
 |---|---|
 | `id_chunk_video` | Video chunk the sign belongs to (`chunk_01` to `chunk_31`); the key of that chunk in `poses.json`. |
+| `signer_id` | Interpreter producing the sign (`signer_01` to `signer_10`). One chunk changes signer partway through, so signer is given per sign rather than per chunk. |
 | `gloss_start`, `gloss_end` | Start and end of the sign in milliseconds from the start of the chunk, as annotated. |
 | `normalized_gloss` | Gloss after normalization. `<DELETREO>` marks fingerspelling. |
 | `islr_split` | `train`, `val` or `test`: the split used in the isolated recognition experiments (13,516 / 1,690 / 1,690). |
